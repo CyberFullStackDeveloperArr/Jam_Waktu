@@ -1,0 +1,29 @@
+.border-rainbow {
+      border: 9px solid;
+      border-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+      border-image-slice: 1;
+      animation: rainbow-border 2s linear infinite;
+      box-shadow: 0px 4px 40px rgb(255, 0, 0);
+    }
+    
+    @keyframes rainbow-border {
+      0% { border-image-source: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+      14.3% { border-image-source: linear-gradient(to right, indigo, blue, green, yellow, orange, red, violet); }
+      28.6% { border-image-source: linear-gradient(to right, blue, green, yellow, orange, red, violet, indigo); }
+      42.9% { border-image-source: linear-gradient(to right, green, yellow, orange, red, violet, indigo, blue); }
+      57.2% { border-image-source: linear-gradient(to right, yellow, orange, red, violet, indigo, blue, green); }
+      71.5% { border-image-source: linear-gradient(to right, orange, red, violet, indigo, blue, green, yellow); }
+      85.8% { border-image-source: linear-gradient(to right, red, violet, indigo, blue, green, yellow, orange); }
+      100% { border-image-source: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+    }
+    .jam1 {
+      animation: gerak 2s infinite;
+    }
+    @keyframes gerak {
+      0%, 100% {
+        transform: translateX(10px);
+      }
+      50% {
+        transform: translateY(60px);
+      }
+    }

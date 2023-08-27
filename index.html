@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="bg-black flex justify-center items-center h-screen">
+    
+    <div class="clock text-5xl font-bold text-center z-10">
+     <span class="hour font-bold text-blue-500" id="hour"></span> <span class="text-amber-400">:</span>
+     <span class="minute font-bold text-red-500" id="minute"></span> <span class="text-fuchsia-600">:</span>
+     <span class="second font-bold text-yellow-300" id="second"> </span>
+    </div>
+
+    <div class="border-rainbow px-16 py-16 absolute z-0 bg-gray-900">
+      <div class="font-bold text-center">
+        <p id="date-container" class="top-12 relative font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-violet-500"></p>
+      </div>
+      <svg class="jam1 -ml-14 w-6 h-6 text-blue-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+        <path d="M9.782.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231C14.488 3.365 13.551.6 9.782.72ZM4.8 6.979A4.772 4.772 0 0 0 0 11.151a3.43 3.43 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231C9.51 9.623 8.573 6.853 4.8 6.979Z"/>
+      </svg>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
